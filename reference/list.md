@@ -2,6 +2,13 @@
 
 # List of reference
 
+## **000 TBD**
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+>Research Objective
+<br>
+
 ## **001 Wireality**
 Wireality: Enabling Complex Tangible Geometries in Virtual Reality with Worn Multi-String Haptics 
 
@@ -9,6 +16,10 @@ Wireality: Enabling Complex Tangible Geometries in Virtual Reality with Worn Mul
 
 ## **002 MetamorphX**
 MetamorphX: An Ungrounded 3-DoF Moment Display that Changes its Physical Properties through Rotational Impedance Control
+
+`rotational impedance` --- `control moment gyroscopes (CMGs)`
+ 
+> physical properties(inertia and viscosity)
 
 <br>
 
@@ -86,6 +97,9 @@ Demonstration of ElastOscillation: A VR Controller Providing 3D Multilevel Feedb
 ## **017 AirRacket**
 AirRacket: Perceptual Design of Ungrounded, Directional Force Feedback to Improve Virtual Racket Sports Experiences
 
+`ungrounded, directional force feedback` --- `air propulsion jet` 
+
+>Virtual Racket sports experience
 <br>
 
 ## **018 JetController**
@@ -96,6 +110,9 @@ JetController: High-speed Ungrounded 3-DoF Force Feedback Controllers using Air 
 ## **019 Unident**
 Unident: Providing Impact Sensations on Handheld Objects via High-Speed Change of the Rotational Inertia
 
+`rotational inertia` --- `moving its weight along one axis`
+
+>Improving the impact sensations
 <br>
 
 ## **020 ELAXO**
