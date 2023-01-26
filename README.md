@@ -3,8 +3,10 @@
 To Do List
 make the table, main is limitation
 check the past haptic research in KMD
+(gravity grabber)
 check the Patrick Baudisch
 check the Jan Gugenheimer
+Pacapa
 zotero
 
 # List of reference

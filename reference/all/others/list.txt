@@ -1,0 +1,7 @@
+Haptic turk: a motion platform based on people
+
+DualPanto: A Haptic Device that Enables Blind Users
+to Continuously Interact with Virtual Worlds 
+
+GyroVR: Simulating
+Inertia in Virtual Reality using Head Worn Flywheels

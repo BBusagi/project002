@@ -7,10 +7,15 @@
 `Focus on which mechanics effect` --- `Haptic solution`
 
 >Research Objective
+
 <br>
 
 ## **001 Wireality**
 Wireality: Enabling Complex Tangible Geometries in Virtual Reality with Worn Multi-String Haptics 
+
+`Complex tangible geometries` --- `worn multi-string haptics`
+
+>Low-cast low-power
 
 <br>
 
@@ -19,7 +24,7 @@ MetamorphX: An Ungrounded 3-DoF Moment Display that Changes its Physical Propert
 
 `rotational impedance` --- `control moment gyroscopes (CMGs)`
  
-> physical properties(inertia and viscosity)
+> physical properties (inertia and viscosity)
 
 <br>
 
@@ -82,10 +87,18 @@ Adding Force Feedback to Mixed Reality Experiences and Games using Electrical Mu
 ## **014 Transcalibur**
 Transcalibur: A Weight Shifting Virtual Reality Controller for 2D Shape Rendering based on Computational Perception Model
 
+`VR controller cannot render shape` --- `a weight shifting`
+
+>2D shape rendering
+
 <br>
 
 ## **015 hand-held VR controllers**
 Computational design of hand-held VR controllers using haptic shape illusion
+
+`contradiction between haptic and visual` --- `haptic shape illusion`
+
+>design shape maintain same haptic shape perception
 
 <br>
 
@@ -100,6 +113,7 @@ AirRacket: Perceptual Design of Ungrounded, Directional Force Feedback to Improv
 `ungrounded, directional force feedback` --- `air propulsion jet` 
 
 >Virtual Racket sports experience
+
 <br>
 
 ## **018 JetController**
@@ -113,6 +127,7 @@ Unident: Providing Impact Sensations on Handheld Objects via High-Speed Change o
 `rotational inertia` --- `moving its weight along one axis`
 
 >Improving the impact sensations
+
 <br>
 
 ## **020 ELAXO**
@@ -120,13 +135,23 @@ ELAXO : Rendering Versatile Resistive Force Feedback for Fingers Grasping and Tw
 
 <br>
 
+## **021 PaCaPa**
+PaCaPa: A Handheld VR Device for Rendering Size, Shape, and Stiffness of Virtual Objects in Tool-based Interactions
+
+`rendering size shape stiffness` --- `tool-based interactions`
+
+>render the collision
+
+<br>
+
 ## **000 TBD**
 
 
 <br>
-
 ---
-# Haptic Controllers & Rich Haptics for MR - Microsoft Research
+
+# Microsoft Research - Haptic Controllers & Rich Haptics for MR
+
 ## **001 Haptic Revolver**
 Haptic Revolver: Touch, Shear, Texture, and Shape Rendering on a Reconfigurable Virtual Reality Controller
 
