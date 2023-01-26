@@ -1,6 +1,10 @@
 <font size= "3">
 
 To Do List
+make the table, main is limitation
+check the past haptic research in KMD
+check the Patrick Baudisch
+check the Jan Gugenheimer
 zotero
 
 # List of reference
