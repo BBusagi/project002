@@ -1,13 +1,12 @@
 <font size= "3">
 
-To Do List
-make the table, main is limitation
-check the past haptic research in KMD
-(gravity grabber)
-check the Patrick Baudisch
-check the Jan Gugenheimer
-Pacapa
-zotero
+To Do List: <br>
+make the table, main is limitation<br>
+check the past haptic research in KMD<br>
+(gravity grabber)<br>
+check the Patrick Baudisch<br>
+check the Jan Gugenheimer<br>
+zotero<br>
 
 # List of reference
 
