@@ -52,6 +52,10 @@ A novel interaction system with force feedback between real - and virtual human 
 ## **007 Wearable Robots**
 Wearable Robots An Original Mechatronic Design of a Hand Exoskeleton for Assistive and Rehabilitative Purposes
 
+`mechatronic design` --- `hand exoskeleton`
+
+>assistive and rehabilitative purposes
+
 <br>
 
 ## **008 DexController**
@@ -118,6 +122,10 @@ AirRacket: Perceptual Design of Ungrounded, Directional Force Feedback to Improv
 
 ## **018 JetController**
 JetController: High-speed Ungrounded 3-DoF Force Feedback Controllers using Air Propulsion Jets
+
+`3-DoF force feedback` --- `air propulsion jets`
+
+>high frequency, support popular game
 
 <br>
 
