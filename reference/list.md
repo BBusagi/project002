@@ -41,6 +41,10 @@ MetamorphX: An Ungrounded 3-DoF Moment Display that Changes its Physical Propert
 ## **005 ElasticVR**
 ElasticVR: Providing Multilevel Continuously-Changing Resistive Force and Instant Impact Using Elasticity for VR
 
+`multilevel continuously-changing resistive force and instant impact` --- `elastic band`
+
+> VR, length and extension distance
+
 <br>
 
 
@@ -65,6 +69,10 @@ DexController : Designing a VR Controller with Grasp-Recognition for Enriching N
 
 ## **009 BLASTNEL**
 BLASTNEL: Collision Sensation Display for Virtual Reality Games Using Highly Compressed Air
+
+`collision sensation display` --- `highly compressed air`
+
+>VR game
 
 <br>
 
