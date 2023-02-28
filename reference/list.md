@@ -6,7 +6,7 @@
 
 `Focus on which mechanics effect` --- `Haptic solution`
 
->Research Objective
+>research objective and scenarios
 
 <br>
 
@@ -51,6 +51,10 @@ ElasticVR: Providing Multilevel Continuously-Changing Resistive Force and Instan
 ## **006 A novel interaction system with force feedback**
 A novel interaction system with force feedback between real - and virtual human an entertainment system virtual catch ball
 
+`touch and force-feedback activities` --- `Game System'VR Catch Ball'`
+
+>human-scale virtual environment
+
 <br>
 
 ## **007 Wearable Robots**
@@ -64,6 +68,10 @@ Wearable Robots An Original Mechatronic Design of a Hand Exoskeleton for Assisti
 
 ## **008 DexController**
 DexController : Designing a VR Controller with Grasp-Recognition for Enriching Natural Game Experience
+
+`grasp recognition` --- `sensors`
+
+>natual game experience
 
 <br>
 
@@ -79,6 +87,10 @@ BLASTNEL: Collision Sensation Display for Virtual Reality Games Using Highly Com
 ## **010 Impacto**
 Impacto: Simulating Physical Impact by Combining Tactile Stimulation with Electrical Muscle Stimulation
 
+`physical impact` --- `solenoid,electrodes,EMS`
+
+>VR sport simulators
+
 <br>
 
 ## **011 Affordance++**
@@ -89,10 +101,18 @@ Affordance++: Allowing Objects to Communicate Dynamic Use
 ## **012 Providing Haptics to Walls**
 Providing Haptics to Walls & Heavy Objects in Virtual Reality by Means of Electrical Muscle Stimulation
 
+`resistance` --- `EMS`
+
+>walls & heavy objects
+
 <br>
 
 ## **013 Adding Force Feedback**
 Adding Force Feedback to Mixed Reality Experiences and Games using Electrical Muscle Stimulation
+
+`force feedback` --- `EMS`
+
+>MR experiences
 
 <br>
 
@@ -116,6 +136,10 @@ Computational design of hand-held VR controllers using haptic shape illusion
 
 ## **016 Demonstration of ElastOscillation**
 Demonstration of ElastOscillation: A VR Controller Providing 3D Multilevel Feedback for Damped Oscillation
+
+`damped oscillation feedback` --- `six elastic bands and DC motors`
+
+>VR app, pan-flipping, bartender-shaking, wine-swiring and fishing
 
 <br>
 
@@ -142,12 +166,16 @@ Unident: Providing Impact Sensations on Handheld Objects via High-Speed Change o
 
 `rotational inertia` --- `moving its weight along one axis`
 
->Improving the impact sensations
+>improving the impact sensations
 
 <br>
 
 ## **020 ELAXO**
 ELAXO : Rendering Versatile Resistive Force Feedback for Fingers Grasping and Twisting
+
+`versatile resistive force feedback` --- `exoskeleton with rings mechanical brakes and elastic bands`
+
+>fingers grasping and twisting
 
 <br>
 
