@@ -199,25 +199,45 @@ PaCaPa: A Handheld VR Device for Rendering Size, Shape, and Stiffness of Virtual
 ## **001 Haptic Revolver**
 Haptic Revolver: Touch, Shear, Texture, and Shape Rendering on a Reconfigurable Virtual Reality Controller
 
+`shear force and motion` --- `spin the wheel`
+
+>surface features and techniques
+
 <br>
 
 ## **002 CapstanCrunch**
 CapstanCrunch: A Haptic VR Controller with User-supplied Force Feedback
+
+`variable stiffness and compliance` --- `friction-based capstan brake mechanism`
+
+>touch and grasp haptic sensations
 
 <br>
 
 ## **003 Haptic PIVOT**
 Haptic PIVOT: On-Demand Handhelds in VR
 
+`force actiong on the held virtual objects` --- `on-demand generic haptic handle`
+
+>rendering grasping catching and throwing hand held objects
+
 <br>
 
 ## **004 TORC**
 TORC: A virtual reality controller for in-hand high-dexterity finger interaction
 
+`high-dexterity finger interaction` --- `vibrotactile motors`
+
+>render virtual object characteristics and behaviors
+
 <br>
 
 ## **005 X-Rings**
 X-Rings: A Hand-mounted 360° Shape Display for Grasping in Virtual Reality
+
+`360° shape display` --- `motor gear and wedge`
+
+>virtual objects 
 
 <br>
 
