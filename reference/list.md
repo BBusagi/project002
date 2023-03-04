@@ -179,6 +179,10 @@ Impacto: Simulating Physical Impact by Combining Tactile Stimulation with Electr
 ## **002 Affordance++**
 Affordance++: Allowing Objects to Communicate Dynamic Use
 
+`dynamic use` --- `EMS`
+
+>"suggest how to be used"
+
 <br>
 
 ## **003 Providing Haptics to Walls**
