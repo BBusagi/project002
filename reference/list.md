@@ -253,3 +253,56 @@ X-Rings: A Hand-mounted 360° Shape Display for Grasping in Virtual Reality
 
 ## **000 TBD**
 
+# Survey
+
+## **001 Can I Touch This ?**
+"Can I Touch This?": Survey of Virtual Reality Interactions via Haptic Solutions
+
+dimention: physically and actuation<br>
+criteria: User experience and conception cost
+
+## **002 Let's Meet and Work it Out**
+"Let’s Meet and Work it Out": Understanding and Mitigating Encountered-Type of Haptic Devices Failure Modes in VR
+
+ETHD - Encountered-Type of Haptic Device<br>
+FMEA - Failure modes and effects analysis
+
+steps: Intention - Displacement & Reconfiguration - Interaction
+
+## **003 Survey of Pseudo-Haptics**
+Survey of Pseudo-Haptics: Haptic Feedback Design and Application Proposals
+
+physical stimuli - mechanical haptic interfaces<br>
+Pseudo-Haptics - illusional haptic perceptions
+
+object properties: material, geometric<br>
+user input: displacement, force, pressing duration<br>
+visual stimuli: displacement, surface deformation, color, size
+
+## **000 Name**
+T  I  T  L  E
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+>research objective and scenarios
+
+## **000 Name**
+T  I  T  L  E
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+>research objective and scenarios
+
+## **000 Name**
+T  I  T  L  E
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+>research objective and scenarios
+
+## **000 Name**
+T  I  T  L  E
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+>research objective and scenarios
