@@ -261,6 +261,8 @@ X-Rings: A Hand-mounted 360° Shape Display for Grasping in Virtual Reality
 dimention: physically and actuation<br>
 criteria: User experience and conception cost
 
+<br>
+
 ## **002 Let's Meet and Work it Out**
 "Let’s Meet and Work it Out": Understanding and Mitigating Encountered-Type of Haptic Devices Failure Modes in VR
 
@@ -268,6 +270,8 @@ ETHD - Encountered-Type of Haptic Device<br>
 FMEA - Failure modes and effects analysis
 
 steps: Intention - Displacement & Reconfiguration - Interaction
+
+<br>
 
 ## **003 Survey of Pseudo-Haptics**
 Survey of Pseudo-Haptics: Haptic Feedback Design and Application Proposals
@@ -279,26 +283,32 @@ object properties: material, geometric<br>
 user input: displacement, force, pressing duration<br>
 visual stimuli: displacement, surface deformation, color, size
 
-## **000 Name**
-T  I  T  L  E
+<br>
 
-`Focus on which mechanics effect` --- `Haptic solution`
+## **004 Quality of Experience**
+A survey of challenges and methods for Quality of Experience
+assessment of interactive VR applications
 
->research objective and scenarios
+Quality of Experience
+7 questions- stakeholders,influence factors,prescreening,test material,QoE methodology,temporal aspect, environment
 
-## **000 Name**
-T  I  T  L  E
+<br>
 
-`Focus on which mechanics effect` --- `Haptic solution`
+## **005 Survey for Weight Perception**
+A Survey on Simulation for Weight Perception in Virtual Reality
 
->research objective and scenarios
+1.no unitied simulation method<br>
+2.inconsistency of vistual feedback and real hand motion
 
-## **000 Name**
-T  I  T  L  E
+<br>
 
-`Focus on which mechanics effect` --- `Haptic solution`
+## **006 Pseudo-Haptic Feedback**
+Simulating Haptic Feedback Using Vision: a Survey of Research and Applications of “Pseudo-Haptic Feedback”
 
->research objective and scenarios
+visuo-haptic integration & haptic illusions<br>
+haptic properties: friction,stiffness,mass,texture
+
+<br>
 
 ## **000 Name**
 T  I  T  L  E
