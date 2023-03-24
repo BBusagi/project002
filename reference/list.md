@@ -56,7 +56,7 @@ ElasticVR: Providing Multilevel Continuously-Changing Resistive Force and Instan
 
 <br>
 
-## **006 Demonstration of ElastOscillation**
+## **006 ElastOscillation**
 Demonstration of ElastOscillation: A VR Controller Providing 3D Multilevel Feedback for Damped Oscillation
 
 `damped oscillation feedback` --- `six elastic bands and DC motors`
@@ -97,7 +97,7 @@ ELAXO : Rendering Versatile Resistive Force Feedback for Fingers Grasping and Tw
 
 <br>
 
-## **011 SPIDAR-W_2**
+## **011 SPIDAR-WⅡ**
 ウェアラブル 6 自由度力覚提示デバイス SPIDAR-W の フレームの軽量化とエンドエフェクタの改良
 
 <br>
@@ -194,7 +194,7 @@ Providing Haptics to Walls & Heavy Objects in Virtual Reality by Means of Electr
 
 <br>
 
-## **004 Adding Force Feedback**
+## **004 Adding Force Feedback to MR**
 Adding Force Feedback to Mixed Reality Experiences and Games using Electrical Muscle Stimulation
 
 `force feedback` --- `EMS`
