@@ -9,6 +9,16 @@ T  I  T  L  E
 
 >research objective and scenarios
 
+### Limitation :
+1. 
+2. 
+3. 
+
+### Future Work :
+1. 
+2. 
+3. 
+
 <br>
 
 ## **001 VR Catch Ball**
@@ -17,6 +27,15 @@ A novel interaction system with force feedback between real - and virtual human 
 `touch and force-feedback activities` --- `Game System'VR Catch Ball'`
 
 >human-scale virtual environment
+
+### Limitation :
+1. a single point of contact 
+2. add more physical phenomena
+3. a balance between real-time motion synthesis and realistic human motions
+
+### Future Work :
+1. a multi-modal interaction system that involves gaze and tactile sensation
+2. a touchable virtual human
 
 <br>
 
@@ -27,6 +46,16 @@ Wearable Robots An Original Mechatronic Design of a Hand Exoskeleton for Assisti
 
 >assistive and rehabilitative purposes
 
+### Limitation :
+1. overall dimensions
+2. actuation needs to be replaced
+3. lack of a thumb-handling mechanism
+
+### Future Work :
+1. the development of a thumb actuation
+2. independent finger movement
+3. component miniaturization
+
 <br>
 
 ## **003 Wireality**
@@ -35,6 +64,16 @@ Wireality: Enabling Complex Tangible Geometries in Virtual Reality with Worn Mul
 `Complex tangible geometries` --- `worn multi-string haptics`
 
 >Low-cast low-power
+
+### Limitation :
+1. only resistive force in perpendicular to the wearer’s body
+2. simulation failure after touching a surface or object
+3. cannot explore complex geometries in a continuous forward motion
+4. inability to simulate the small objects and handheld objects
+
+### Future Work :
+1. haptic retargeting
+2. can be combined with other haptic systems and feedback types
 
 <br>
 
@@ -45,6 +84,13 @@ DexController : Designing a VR Controller with Grasp-Recognition for Enriching N
 
 >natual game experience
 
+### Limitation :
+1. a single variable of grasp modality was too simple
+2. limited scope in a case of VR game context
+
+### Future Work :
+1. grasp force into five intervals or a continuous value
+
 <br>
 
 ## **005 ElasticVR**
@@ -53,6 +99,14 @@ ElasticVR: Providing Multilevel Continuously-Changing Resistive Force and Instan
 `multilevel continuously-changing resistive force and instant impact` --- `elastic band`
 
 > VR, length and extension distance
+
+### Limitation :
+1. cannot provide resistive force to arm
+2. need to store power for impact
+
+### Future Work :
+1. provide the force to fingers
+2. using advanced brakes
 
 <br>
 
@@ -185,7 +239,7 @@ Affordance++: Allowing Objects to Communicate Dynamic Use
 
 <br>
 
-## **003 Providing Haptics to Walls**
+## **003 Walls & Heavy Objects**
 Providing Haptics to Walls & Heavy Objects in Virtual Reality by Means of Electrical Muscle Stimulation
 
 `resistance` --- `EMS`
@@ -194,7 +248,7 @@ Providing Haptics to Walls & Heavy Objects in Virtual Reality by Means of Electr
 
 <br>
 
-## **004 Adding Force Feedback to MR**
+## **004 MR**
 Adding Force Feedback to Mixed Reality Experiences and Games using Electrical Muscle Stimulation
 
 `force feedback` --- `EMS`
