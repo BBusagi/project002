@@ -1,0 +1,24 @@
+
+可能的课题：
+运动状态的力反馈是否可以在用户操作vr化身时更加易于操作
+模块化运动状态检测
+
+0405-Mitori:
+手掌在接受纵向的震动时，会不自主地放松
+多去竹芝，实体制作方面咨询神山
+多田隈 理一郎 「全方向駆動歯車機構の原理創案・具現化」
+haptic + ??? = 复合状态的震动
+有序声波震动提供方向感haptic-https://staff.aist.go.jp/t-tanabe/research/research_a.html
+
+0405-Maeda:
+1. The survey needs to be more professional
+2. What kind of scenarios the motion state info is more beneficial to the user
+3. Whether motion state display can really help users to manipulate objects more quickly and easily - research objective
+4. How to pass the motion state to user ? design
+5. The design needs to take into account that different parts of hand require different haptic solutions
+6. The entire research needs to base on the scenario
+7. Try to answer these questions - https://iis-lab.org/misc/realitycheck/
+
+0330-Minami
+motion state + ?
+pural ps5 haptic motor
