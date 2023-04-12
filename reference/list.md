@@ -210,7 +210,41 @@ MetamorphX: An Ungrounded 3-DoF Moment Display that Changes its Physical Propert
 
 <br>
 
+## **018 Tactile Compass**
+Tactile Compass: Enabling Visually Impaired People to Follow a
+Path with Continuous Directional Feedback
 
+`Focus on which mechanics effect` --- `Haptic solution`
+
+<br>
+
+## **019 inFORCE**
+inFORCE:Bi-directional ‘Force’ Shape Display For Haptic Interaction
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+<br>
+
+## **020 TouchBall**
+“TouchBall”: A Design and Evaluation of a Hand-held Trackball based Touch-Haptic Interface 
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+<br>
+
+## **021 HapBelt**
+HapBelt: Haptic Display for Presenting Vibrotactile and Force Sense Using Belt-winding Mechanism
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+<br>
+
+## **022 DualVib**
+DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback
+
+`Focus on which mechanics effect` --- `Haptic solution`
+
+<br>
 
 
 ## **000 TBD**
