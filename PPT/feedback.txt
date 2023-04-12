@@ -4,18 +4,18 @@
 模块化运动状态检测
 
 0405-Mitori:
-手掌在接受纵向的震动时，会不自主地放松
+手掌在接受纵向的震动时，会不自主地放松 - Absolute thresholds for the perception of fore-and-aft, lateral,and vertical vibration at the hand, the seat, and the foot
 多去竹芝，实体制作方面咨询神山
-多田隈 理一郎 「全方向駆動歯車機構の原理創案・具現化」
+多田隈 理一郎 -「全方向駆動歯車機構の原理創案・具現化」
 haptic + ??? = 复合状态的震动
-有序声波震动提供方向感haptic-https://staff.aist.go.jp/t-tanabe/research/research_a.html
+有序声波震动提供方向感 - haptic-https://staff.aist.go.jp/t-tanabe/research/research_a.html
 
 0405-Maeda:
 1. The survey needs to be more professional
 2. What kind of scenarios the motion state info is more beneficial to the user
-3. Whether motion state display can really help users to manipulate objects more quickly and easily - research objective
+3. Whether motion state display can really help users to manipulate objects more quickly and easily - research objective -> 没有找到任何动作状态相关的解释 ->pose tracking 6 dof 上的运动反馈
 4. How to pass the motion state to user ? design
-5. The design needs to take into account that different parts of hand require different haptic solutions
+5. The design needs to take into account that different parts of hand require different haptic solutions ->Skin Stretch
 6. The entire research needs to base on the scenario
 7. Try to answer these questions - https://iis-lab.org/misc/realitycheck/
 
