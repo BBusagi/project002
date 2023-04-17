@@ -1,28 +1,61 @@
 String string;
-
+int timedelay = 550;
 #include <Servo.h>
 Servo myservo;
+Servo myservo2;
+
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.setTimeout(20);
   myservo.attach(7);
+  myservo2.attach(9);
 }
 
 void loop() {
-  if (Serial.available() > 0) {  
+  if (Serial.available() > 0) {
     string = Serial.readString();
     string.trim();
-    if (string == "1")  
-    {myservo.write(85);}
-    else if (string == "2")  
-    {myservo.write(95);}
-    else if (string == "3")  
-    {myservo.write(95);}
-    else if (string == "4")  
-    {myservo.write(85);}
-    else  {myservo.write(90);}
+    if (string == "1")
+    {
+      clockwise(myservo);
+    }
+    else if (string == "2")
+    {
+      anticlockwise(myservo);
+    }
+    else if (string == "3")
+    {
+      clockwise(myservo2);
+    }
+    else if (string == "4")
+    {
+      anticlockwise(myservo2);
+    }
+    else  {
+      myservo.write(90);
+    }
   }
   else
   { }
 }
-  
+
+void clockwise(Servo servoname)
+{ servoname.write(80);
+  delay(timedelay);
+  servoname.write(90);
+}
+void clockwise2(Servo servoname)
+{ servoname.write(80);
+  delay(timedelay/5);
+  servoname.write(90);
+  delay(timedelay/10);
+  servoname.write(80);
+  delay(timedelay/5);
+  servoname.write(90);
+}
+
+void anticlockwise(Servo servoname)
+{ servoname.write(100);
+  delay(timedelay);
+  servoname.write(90);
+}
