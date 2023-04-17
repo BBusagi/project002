@@ -11,6 +11,8 @@ public class controller : MonoBehaviour
     private float horizontal;
     private float timer;
 
+    public AudioSource sound;
+
     private SerialPort serialPort; // 串口对象
     public string message;
 
@@ -36,6 +38,15 @@ public class controller : MonoBehaviour
         transform.Translate(movement);
         transform.Rotate(rotation);
 
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            sound.Play();
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            sound.Stop();
+        }
     }
 
     private void FixedUpdate()
