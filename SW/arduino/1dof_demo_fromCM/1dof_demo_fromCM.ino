@@ -9,6 +9,8 @@ void setup() {
   Serial.setTimeout(20);
   myservo.attach(7);
   myservo2.attach(9);
+  myservo.write(95);
+  myservo2.write(90);
 }
 
 void loop() {
@@ -32,7 +34,7 @@ void loop() {
       anticlockwise(myservo2);
     }
     else  {
-      myservo.write(90);
+      myservo.write(95);
     }
   }
   else

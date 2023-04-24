@@ -397,10 +397,47 @@ visuo-haptic integration & haptic illusions<br>
 haptic properties: friction,stiffness,mass,texture
 
 <br>
+<br>
+<br>
 
-## **000 Name**
-T  I  T  L  E
+# Self-motion
+## **001 Haptic Motion**
+Haptic Motion: Improving Sensation of Self-Motion in Virtual Worlds with
+Force Feedback
 
-`Focus on which mechanics effect` --- `Haptic solution`
+`self-motion system` --- `grounded 6dof device`
 
->research objective and scenarios
+>2 experiments, control vestibular influences and semicircular canal<br>
+>1. Can force-feedback increase the illusion of self motion?
+>2. Generalization of the Concept in Full 3D Context, more
+complex trajectory and 5 haptic patterns
+
+Result:
+1. haptic induces frequency and visual induces duration
+2. weak with speed and no correlation with direction
+
+<br>
+
+## **002 Haptic Feedback Improve**
+Can Haptic Feedback Improve the Perception of Self-Motion in Virtual Reality? 
+
+• Can haptic feedback substitute for the missing 
+sensations of navigation in VR (i.e. proprioceptive and 
+vestibular information)? 
+
+• Can haptic feedback improve the perception of selfmotion,
+ the memorization of a trajectory, and the 
+creation of cognitive maps?
+
+>experiment
+>exploration: watched a passive visual navigation 
+>reproduction: asked to estimate the angle of the visual 
+turn
+
+Result:
+the range effect
+asymmetrical effect
+complex trajectories
+other haptic feedback
+
+
