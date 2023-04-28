@@ -1,3 +1,27 @@
+0428-Kato
+假设你的观众没有任何背景
+如何和现有的设备进行融合
+旋转速度和物体运动速度
+加快进度 一个月要有结果
+
+
+0428-Horie
+1. Testing the rotation of two servos in one dimension, but I did not discover any significant improvement for feeling.
+
+2. Enhancing the touching area of the wheels, which significantly improved the directional feedback compared to before. I also added a sleeve to restrict the contact area, allowing users to have a clearer sense of directional force feedback.
+
+3. Designing two different crank connection, but the efficiency was poor, and there was no significant improvement. For the pressure methods, I am considering using the solenoid and try again.
+
+4. I found that when rendering left and right rotation, the device's rotation feedback direction does not necessarily need to be consistent with the rotation dimension in the scene. 
+After investigation, it was found that the palm of the hand only has planar information and no depth information. Thus, this finding can provide some suggestions for the design of future controllers.
+I would like to propose a hypothesis that 1 degree of freedom mechanical feedback on the device can express motion information in other dimensions,
+Another idea I had is that since our palm doesn't have spatial awareness and generally we hold the controller against our palm, could we artificially create a controllable plane to simulate force feedback in the depth direction?
+
+two option:
+1. 1dof translational vector
+2. 1dof rotational vector
+
+
 
 可能的课题：
 运动状态的力反馈是否可以在用户操作vr化身时更加易于操作
