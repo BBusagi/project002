@@ -7,11 +7,13 @@ void setup() {
   Serial.begin(9600);
   Serial.setTimeout(20);
    
-  myservo.attach(7);
-  myservo.write(90);
+  myservo.attach(9);
+  myservo.write(0);
 }
 
 void loop() {
-  //myservo.write(115);
-  myservo.write(95);
+  myservo.write(-90);
+  delay(2000);
+  myservo.write(200);
+  delay(2000);
 }
