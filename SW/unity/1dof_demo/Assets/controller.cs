@@ -5,11 +5,14 @@ using System.IO.Ports;
 
 public class controller : MonoBehaviour
 {
-    public int moveSpeed = 1;
+    public int moveSpeed = 10;
     public int rotateSpeed = 30;
     private float vertical;
     private float horizontal;
     private float timer;
+    private float realSpeed;
+    private int speedLevel;
+    public Rigidbody rb;
 
     public AudioSource sound;
 
@@ -19,7 +22,7 @@ public class controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        serialPort = new SerialPort("COM6", 115200);
+        serialPort = new SerialPort("COM3", 115200);
         serialPort.Open();
         if (serialPort.IsOpen) { print("Open"); }
         message = "1";
@@ -28,6 +31,7 @@ public class controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        StartCoroutine(CalculateSpeed());
         vertical = Input.GetAxis("Vertical"); // 获取垂直方向输入（上下箭头键）
         horizontal = Input.GetAxis("Horizontal"); // 获取水平方向输入（左右箭头键）
         message = horizontal.ToString("F2");
@@ -47,15 +51,34 @@ public class controller : MonoBehaviour
         {
             sound.Stop();
         }
+
+        ////int realSpeed = (int)Vector3.Magnitude(rb.velocity);
+        //float realSpeed = Vector3.Magnitude(rb.velocity);
+        //float speed_edit = realSpeed * 10000000;
+        //Debug.Log(speed_edit);
+
     }
+    IEnumerator CalculateSpeed()
+    {
+        Vector2 lastPosition = new Vector2(this.transform.position.x, this.transform.position.z) * 10;
+        yield return new WaitForFixedUpdate();
+        realSpeed = (lastPosition - new Vector2(this.transform.position.x, this.transform.position.z) * 10).magnitude / Time.deltaTime;
+        realSpeed = realSpeed / 10;
+        if (realSpeed < 0.01) realSpeed = 0;
+        speedLevel = (int)realSpeed;
+        Debug.Log(speedLevel);
+    }
+
 
     private void FixedUpdate()
     {
+
         timer += Time.fixedDeltaTime;
         if (timer >= 0.5) //0.5秒一次执行
         {
             SendMessage();
             timer = 0;
+
         }
     }
 
