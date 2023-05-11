@@ -11,13 +11,15 @@ public class controller : MonoBehaviour
     private float horizontal;
     private float timer;
     private float realSpeed;
-    private int speedLevel;
-    public Rigidbody rb;
+    public int speedLevel;
+    public bool isCrash = false;
 
     public AudioSource sound;
 
     private SerialPort serialPort; // 串口对象
     public string message;
+    public string message_V;
+    public string message_H;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,7 @@ public class controller : MonoBehaviour
         serialPort = new SerialPort("COM3", 115200);
         serialPort.Open();
         if (serialPort.IsOpen) { print("Open"); }
-        message = "1";
+        //message = "1"; ???
     }
 
     // Update is called once per frame
@@ -34,9 +36,8 @@ public class controller : MonoBehaviour
         StartCoroutine(CalculateSpeed());
         vertical = Input.GetAxis("Vertical"); // 获取垂直方向输入（上下箭头键）
         horizontal = Input.GetAxis("Horizontal"); // 获取水平方向输入（左右箭头键）
-        message = horizontal.ToString("F2");
-        //message = "P " + vertical.ToString("F2") + " R " + horizontal.ToString("F2");
-
+        message_V = vertical.ToString("F2");
+        message_H = horizontal.ToString("F2");//保留两位数
         Vector3 movement = new Vector3(0.0f, 0.0f, vertical * moveSpeed * 0.01f); //删除Time.deltaTime
         Vector3 rotation = new Vector3(0.0f, horizontal * rotateSpeed * 0.1f, 0.0f);   //删除Time.deltaTime
         transform.Translate(movement);
@@ -46,16 +47,10 @@ public class controller : MonoBehaviour
         {
             sound.Play();
         }
-
         if (Input.GetKeyDown(KeyCode.X))
         {
             sound.Stop();
         }
-
-        ////int realSpeed = (int)Vector3.Magnitude(rb.velocity);
-        //float realSpeed = Vector3.Magnitude(rb.velocity);
-        //float speed_edit = realSpeed * 10000000;
-        //Debug.Log(speed_edit);
 
     }
     IEnumerator CalculateSpeed()
@@ -66,7 +61,7 @@ public class controller : MonoBehaviour
         realSpeed = realSpeed / 10;
         if (realSpeed < 0.01) realSpeed = 0;
         speedLevel = (int)realSpeed;
-        Debug.Log(speedLevel);
+        //Debug.Log("Speed:" + speedLevel);
     }
 
 
@@ -74,12 +69,26 @@ public class controller : MonoBehaviour
     {
 
         timer += Time.fixedDeltaTime;
-        if (timer >= 0.5) //0.5秒一次执行
+        if (timer >= 0.4) //0.5秒一次执行
         {
             SendMessage();
             timer = 0;
 
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Sign")
+        {
+            isCrash = true;
+            Debug.Log("Crash");
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        isCrash = false;
     }
 
     private void SendMessage()
@@ -89,10 +98,12 @@ public class controller : MonoBehaviour
             if (vertical > 0)
             {
                 message = "1";
+                //message = "2";
             }
             else if (vertical < 0)
             {
                 message = "2";
+                //message = "1";
             }
             else if (horizontal < 0)
             { 
