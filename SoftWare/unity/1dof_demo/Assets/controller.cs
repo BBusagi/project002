@@ -69,7 +69,7 @@ public class controller : MonoBehaviour
     {
 
         timer += Time.fixedDeltaTime;
-        if (timer >= 0.4) //0.5秒一次执行
+        if (timer >= 0.2) //0.5秒一次执行
         {
             SendMessage();
             timer = 0;
