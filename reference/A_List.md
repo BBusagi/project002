@@ -1,4 +1,10 @@
 <font size= "3">
+To Do List: <br>
+check the past haptic research in KMD<br>
+(gravity grabber)<br>
+check the Patrick Baudisch<br>
+check the Jan Gugenheimer<br>
+zotero<br>
 
 # List of reference
 
