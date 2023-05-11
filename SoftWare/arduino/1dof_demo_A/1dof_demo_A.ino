@@ -1,5 +1,7 @@
 String string;
-int timedelay = 550;
+String previString;
+
+int timedelay = 205;
 #include <Servo.h>
 Servo myservo;
 Servo myservo2;
@@ -16,7 +18,7 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {
     string = Serial.readString();
-    string.trim();
+    string.trim();    
     if (string == "1")
     {
       clockwise(myservo);
@@ -34,18 +36,28 @@ void loop() {
       anticlockwise(myservo2);
     }
     else  {
-      myservo.write(95);
+      myservo.write(90);
     }
+
+    previString = string;
   }
   else
-  { }
+  {
+    myservo.write(90);
+    }
 }
 
 void clockwise(Servo servoname)
-{ servoname.write(70);
+{ if(previString != string)
+  {
+    stopServo(myservo);
+    stopServo(myservo2);
+    }
+  servoname.write(70);
   delay(timedelay);
-  servoname.write(90);
+
 }
+
 void clockwise2(Servo servoname)
 { servoname.write(80);
   delay(timedelay/5);
@@ -57,7 +69,17 @@ void clockwise2(Servo servoname)
 }
 
 void anticlockwise(Servo servoname)
-{ servoname.write(100);
+{ if(previString != string)
+  {
+    stopServo(myservo);
+    stopServo(myservo2);
+    }
+  servoname.write(105);
   delay(timedelay);
-  servoname.write(90);
 }
+
+void stopServo (Servo servoname)
+{ 
+  servoname.write(90);
+  delay(1);
+  }
