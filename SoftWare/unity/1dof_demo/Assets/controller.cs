@@ -6,7 +6,7 @@ using System.IO.Ports;
 public class controller : MonoBehaviour
 {
     public int moveSpeed = 10;
-    public int rotateSpeed = 30;
+    public int rotateSpeed = 20;
     private float vertical;
     private float horizontal;
     private float timer;
@@ -60,8 +60,12 @@ public class controller : MonoBehaviour
         realSpeed = (lastPosition - new Vector2(this.transform.position.x, this.transform.position.z) * 10).magnitude / Time.deltaTime;
         realSpeed = realSpeed / 10;
         if (realSpeed < 0.01) realSpeed = 0;
-        speedLevel = (int)realSpeed;
-        //Debug.Log("Speed:" + speedLevel);
+
+        if ((int)realSpeed == 0) { speedLevel = 0; }
+        else if ((int)realSpeed < 3) { speedLevel = 1; }
+        else { speedLevel = 2; }
+        //speedLevel = (int)realSpeed;
+        Debug.Log(realSpeed+ "    Sp   " + speedLevel);
     }
 
 
@@ -114,6 +118,8 @@ public class controller : MonoBehaviour
                 message = "4"; 
             }
 
+            //Debug.Log("mes:" +message+";speed:"+speedLevel);
+            message = message + ";" + speedLevel;
             Debug.Log(message);
             serialPort.WriteLine(message);
             serialPort.BaseStream.Flush();
