@@ -1,5 +1,9 @@
 String string;
 String previString;
+String directionMes;
+int direction;
+String speedMes;
+int speed;
 
 int timedelay = 205;
 #include <Servo.h>
@@ -20,26 +24,30 @@ void loop() {
     string = Serial.readString();
     string.trim();    
     int index = string.indexOf(";");
-    String direction = string.substring(0, index);
-    String speed = string.substring(index + 1);
-    if (direction == "1")
+    directionMes = string.substring(0, index);
+    direction = directionMes.toInt();
+    speedMes = string.substring(index + 1);
+    speed = speedMes.toInt();
+    
+    if (direction == 1)
     {
       clockwise(myservo,speed);
     }
-    else if (direction == "2")
+    else if (direction == 2)
     {
       anticlockwise(myservo,speed);
     }
-    else if (direction == "3")
+    else if (direction == 3)
     {
       clockwise(myservo2);
     }
-    else if (direction == "4")
+    else if (direction == 4)
     {
       anticlockwise(myservo2);
     }
     else  {
       myservo.write(90);
+      myservo2.write(90);
     }
 
     previString = string;
@@ -47,6 +55,7 @@ void loop() {
   else
   {
     myservo.write(90);
+    myservo2.write(90);
     }
 }
 
@@ -60,13 +69,13 @@ void clockwise(Servo servoname)
   delay(timedelay);
 }
 
-void clockwise(Servo servoname,String speed)//带速度控制
+void clockwise(Servo servoname,int speed)//带速度控制
 { if(previString != string)
   {
     stopServo(myservo);
     stopServo(myservo2);
     }
-  servoname.write(90-speed.toInt()*20);//变速处理
+  servoname.write(90-speed*20);//变速处理
   delay(timedelay);
 
 }
@@ -91,13 +100,13 @@ void anticlockwise(Servo servoname)
   delay(timedelay);
 }
 
-void anticlockwise(Servo servoname,String speed)
+void anticlockwise(Servo servoname,int speed)
 { if(previString != string)
   {
     stopServo(myservo);
     stopServo(myservo2);
     }
-  servoname.write(90 +speed.toInt()*20);//变速处理
+  servoname.write(90 +speed*20);//变速处理
   delay(timedelay);
 }
 
