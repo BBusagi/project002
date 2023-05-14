@@ -24,7 +24,7 @@ public class controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        serialPort = new SerialPort("COM3", 115200);
+        serialPort = new SerialPort("COM6", 115200);
         serialPort.Open();
         if (serialPort.IsOpen) { print("Open"); }
         //message = "1"; ???
@@ -65,7 +65,7 @@ public class controller : MonoBehaviour
         else if ((int)realSpeed < 3) { speedLevel = 1; }
         else { speedLevel = 2; }
         //speedLevel = (int)realSpeed;
-        Debug.Log(realSpeed+ "    Sp   " + speedLevel);
+        //Debug.Log(realSpeed+ "    Sp   " + speedLevel);
     }
 
 
