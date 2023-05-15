@@ -14,19 +14,19 @@ void setup() {
 }
 
 void loop() {
-//  myservo.write(95);
-//  myservo2.write(95);  //myservo2.write(85);
-//  delay(2000);
-//  myservo.write(90);
-//  myservo2.write(90);
-//  delay(2000);
-//  myservo.write(100);
-//  myservo2.write(100);
-//  delay(2000);
-
-  myservo.write(90);
+  myservo.write(95);
   myservo2.write(95);
   delay(2000);
+  myservo.write(90);
+  myservo2.write(90);
+  delay(2000);
+  myservo.write(100);
+  myservo2.write(100);
+  delay(2000);
+
+//  myservo.write(90);
+//  myservo2.write(95);
+//  delay(2000);
 
   
 }

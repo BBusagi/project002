@@ -15,8 +15,7 @@ void setup() {
   Serial.setTimeout(20);
   myservo.attach(7);
   myservo2.attach(9);
-  myservo.write(90);
-  myservo2.write(90);
+  stopServo();
 }
 
 void loop() {
@@ -46,16 +45,14 @@ void loop() {
       anticlockwise(myservo2);
     }
     else  {
-      myservo.write(90);
-      myservo2.write(90);
+      stopServo();
     }
 
     previString = string;
   }
   else
   {
-    myservo.write(90);
-    myservo2.write(90);
+    stopServo();
     }
 }
 
@@ -110,7 +107,14 @@ void anticlockwise(Servo servoname,int speed)
   delay(timedelay);
 }
 
-
+void stopServo ()
+{ 
+  myservo.write(90);
+  delay(1);
+  myservo2.write(95);
+  delay(1);
+  }
+  
 void stopServo (Servo servoname)
 { 
   servoname.write(90);
