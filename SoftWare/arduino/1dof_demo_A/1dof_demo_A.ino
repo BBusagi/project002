@@ -47,7 +47,6 @@ void loop() {
     else  {
       stopServo();
     }
-
     previString = string;
   }
   else
@@ -59,18 +58,16 @@ void loop() {
 void clockwise(Servo servoname)
 { if(previString != string)
   {
-    stopServo(myservo);
-    stopServo(myservo2);
+    stopServo();
     }
-  servoname.write(70);
+  servoname.write(80);
   delay(timedelay);
 }
 
 void clockwise(Servo servoname,int speed)//带速度控制
 { if(previString != string)
   {
-    stopServo(myservo);
-    stopServo(myservo2);
+    stopServo();
     }
   servoname.write(90-speed*20);//变速处理
   delay(timedelay);
@@ -90,18 +87,16 @@ void clockwise(Servo servoname,int speed)//带速度控制
 void anticlockwise(Servo servoname)
 { if(previString != string)
   {
-    stopServo(myservo);
-    stopServo(myservo2);
+    stopServo();
     }
-  servoname.write(105);
+  servoname.write(110);
   delay(timedelay);
 }
 
 void anticlockwise(Servo servoname,int speed)
 { if(previString != string)
   {
-    stopServo(myservo);
-    stopServo(myservo2);
+    stopServo();
     }
   servoname.write(90 +speed*20);//变速处理
   delay(timedelay);
@@ -109,14 +104,8 @@ void anticlockwise(Servo servoname,int speed)
 
 void stopServo ()
 { 
-  myservo.write(90);
+  myservo.write(90);//servo的中间值
   delay(1);
-  myservo2.write(95);
-  delay(1);
-  }
-  
-void stopServo (Servo servoname)
-{ 
-  servoname.write(90);
+  myservo2.write(95);//servo2的中间值
   delay(1);
   }

@@ -5,14 +5,15 @@ using System.IO.Ports;
 
 public class controller : MonoBehaviour
 {
-    public int moveSpeed = 10;
-    public int rotateSpeed = 20;
+    private int moveSpeed = 10;
+    private int rotateSpeed = 10;
     private float vertical;
     private float horizontal;
     private float timer;
     private float realSpeed;
     public int speedLevel;
     public bool isCrash = false;
+    public string portNumber = null;
 
     public AudioSource sound;
 
@@ -24,10 +25,9 @@ public class controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        serialPort = new SerialPort("COM6", 115200);
+        serialPort = new SerialPort(portNumber, 115200);
         serialPort.Open();
         if (serialPort.IsOpen) { print("Open"); }
-        //message = "1"; ???
     }
 
     // Update is called once per frame
@@ -59,6 +59,8 @@ public class controller : MonoBehaviour
         yield return new WaitForFixedUpdate();
         realSpeed = (lastPosition - new Vector2(this.transform.position.x, this.transform.position.z) * 10).magnitude / Time.deltaTime;
         realSpeed = realSpeed / 10;
+        //Debug.Log(realSpeed);
+
         if (realSpeed < 0.01) realSpeed = 0;
 
         if ((int)realSpeed == 0) { speedLevel = 0; }
@@ -71,13 +73,11 @@ public class controller : MonoBehaviour
 
     private void FixedUpdate()
     {
-
         timer += Time.fixedDeltaTime;
         if (timer >= 0.2) //0.5秒一次执行
         {
             SendMessage();
             timer = 0;
-
         }
     }
 
@@ -87,6 +87,8 @@ public class controller : MonoBehaviour
         {
             isCrash = true;
             Debug.Log("Crash");
+            serialPort.WriteLine("0;0");
+            serialPort.BaseStream.Flush();
         }
     }
 
@@ -94,6 +96,7 @@ public class controller : MonoBehaviour
     {
         isCrash = false;
     }
+
 
     private void SendMessage()
     {
