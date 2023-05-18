@@ -5,14 +5,15 @@ using System.IO.Ports;
 
 public class controller : MonoBehaviour
 {
-    private int moveSpeed = 10;
-    private int rotateSpeed = 10;
+    public int moveSpeed = 10;
+    public int rotateSpeed = 10;
     private float vertical;
     private float horizontal;
     private float timer;
     private float realSpeed;
     public int speedLevel;
     public bool isCrash = false;
+    public bool isReversal = false;
     public string portNumber = null;
 
     public AudioSource sound;
@@ -104,13 +105,13 @@ public class controller : MonoBehaviour
         {
             if (vertical > 0)
             {
-                message = "1";
-                //message = "2";
+                if (isReversal) { message = "2"; }
+                else { message = "1"; }
             }
             else if (vertical < 0)
             {
-                message = "2";
-                //message = "1";
+                if (isReversal) { message = "1"; }
+                else { message = "2"; }
             }
             else if (horizontal < 0)
             { 

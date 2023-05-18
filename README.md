@@ -1,5 +1,7 @@
 <font size= "3">
-
+to do list:
+foc 无刷电机
+haptic input knob
 
   - [x] 05/11 quick user test
   
