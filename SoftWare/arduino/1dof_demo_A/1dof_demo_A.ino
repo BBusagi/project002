@@ -14,7 +14,8 @@ void setup() {
   Serial.begin(115200);
   Serial.setTimeout(20);
   myservo.attach(7);
-  myservo2.attach(9);
+  //myservo2.attach(9);
+  myservo2.attach(10);
   stopServo();
 }
 
@@ -69,7 +70,7 @@ void clockwise(Servo servoname,int speed)//带速度控制
   {
     stopServo();
     }
-  servoname.write(90-speed*20);//变速处理
+  servoname.write(90-speed*5);//变速处理
   delay(timedelay);
 
 }
@@ -98,7 +99,7 @@ void anticlockwise(Servo servoname,int speed)
   {
     stopServo();
     }
-  servoname.write(90 +speed*20);//变速处理
+  servoname.write(90 +speed*5);//变速处理
   delay(timedelay);
 }
 
