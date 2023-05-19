@@ -99,7 +99,7 @@ void anticlockwise(Servo servoname,int speed)
   {
     stopServo();
     }
-  servoname.write(90 +speed*5);//变速处理
+  servoname.write(90 +speed*10);//变速处理
   delay(timedelay);
 }
 

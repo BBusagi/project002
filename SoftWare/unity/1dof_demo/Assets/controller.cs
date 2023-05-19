@@ -12,8 +12,11 @@ public class controller : MonoBehaviour
     private float timer;
     private float realSpeed;
     public int speedLevel;
+
     public bool isCrash = false;
     public bool isReversal = false;
+    public bool isVertical = false;
+
     public string portNumber = null;
 
     public AudioSource sound;
@@ -44,14 +47,14 @@ public class controller : MonoBehaviour
         transform.Translate(movement);
         transform.Rotate(rotation);
 
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            sound.Play();
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            sound.Stop();
-        }
+        //if (Input.GetKeyDown(KeyCode.Z))
+        //{
+        //    sound.Play();
+        //}
+        //if (Input.GetKeyDown(KeyCode.X))
+        //{
+        //    sound.Stop();
+        //}
 
     }
     IEnumerator CalculateSpeed()
@@ -88,14 +91,13 @@ public class controller : MonoBehaviour
         {
             isCrash = true;
             Debug.Log("Crash");
-            serialPort.WriteLine("0;0");
-            serialPort.BaseStream.Flush();
+            sound.Play();
         }
     }
-
     void OnCollisionExit(Collision collision)
     {
         isCrash = false;
+        sound.Stop();
     }
 
 
@@ -106,20 +108,38 @@ public class controller : MonoBehaviour
             if (vertical > 0)
             {
                 if (isReversal) { message = "2"; }
+                else if (isVertical) { message = "3"; }
                 else { message = "1"; }
             }
             else if (vertical < 0)
             {
                 if (isReversal) { message = "1"; }
+                else if (isVertical) { message = "4"; }
                 else { message = "2"; }
             }
             else if (horizontal < 0)
-            { 
-                message = "3"; 
+            {
+                if (isVertical) 
+                { 
+                    message = "1";
+                    speedLevel = 2;
+                }
+                else
+                {
+                    message = "3";
+                }
             }
             else if (horizontal > 0)
-            { 
-                message = "4"; 
+            {
+                if (isVertical) 
+                { 
+                    message = "2";
+                    speedLevel = 2;
+                }
+                else
+                {
+                    message = "4";
+                }
             }
 
             //Debug.Log("mes:" +message+";speed:"+speedLevel);
@@ -129,4 +149,14 @@ public class controller : MonoBehaviour
             serialPort.BaseStream.Flush();
         }
     }
+
+    public void toolVerticalBool()
+    {
+        isVertical = !isVertical;
+    }
+    public void toolReversalBool()
+    {
+        isReversal = !isReversal;
+    }
+
 }
