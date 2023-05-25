@@ -47,3 +47,10 @@ haptic + ??? = 复合状态的震动
 0330-Minami
 motion state + ?
 pural ps5 haptic motor
+
+motivation
+
+contribution
+field
+
+summary
