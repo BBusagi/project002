@@ -441,9 +441,40 @@ creation of cognitive maps?
 turn
 
 Result:
-the range effect
-asymmetrical effect
-complex trajectories
-other haptic feedback
+the range effect <br>
+asymmetrical effect <br>
+complex trajectories <br>
+other haptic feedback <br>
+
+## **003 Active Haptic Perception in Robots: A Review**
 
 
+<br>
+<br>
+<br>
+
+
+# Design of experiments
+## **001 The Sense of Agency Scale**
+The Sense of Agency Scale: A Measure of Consciously Perceived Control over One’s Mind, Body, and the Immediate Environment
+
+
+
+## **002 Own-Body-Transformations**
+Behavioral Own-Body-Transformations in Children and Adolescents With Typical Development, Autism Spectrum Disorder, and Developmental Coordination Disorder
+
+## **003 Own-Body-Transformations**
+The Game Experience Questionnaire. Technische Universiteit Eindhoven.
+
+## **004 Own-Body-Transformations**
+Game Experience Questionnaire: development of a self-report measure to assess the psychological impact of digital games. Technische Universiteit Eindhoven.
+
+
+
+## **005 PXI_Questionnaire**
+## **006 NASA Task Load Index**
+
+
+<br>
+<br>
+<br>
