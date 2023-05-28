@@ -458,21 +458,20 @@ other haptic feedback <br>
 ## **001 The Sense of Agency Scale**
 The Sense of Agency Scale: A Measure of Consciously Perceived Control over One’s Mind, Body, and the Immediate Environment
 
+## **002 HandMorph**
+HandMorph: a Passive Exoskeleton that Miniaturizes Grasp
 
-
-## **002 Own-Body-Transformations**
-Behavioral Own-Body-Transformations in Children and Adolescents With Typical Development, Autism Spectrum Disorder, and Developmental Coordination Disorder
-
-## **003 Own-Body-Transformations**
+## **003 Game Experience Questionnaire 1**
 The Game Experience Questionnaire. Technische Universiteit Eindhoven.
 
-## **004 Own-Body-Transformations**
+## **004 Game Experience Questionnaire 2**
 Game Experience Questionnaire: development of a self-report measure to assess the psychological impact of digital games. Technische Universiteit Eindhoven.
 
-
-
 ## **005 PXI_Questionnaire**
+Development and validation of the player experience inventory: A scale to measure player experiences at the level of functional and psychosocial consequences
+
 ## **006 NASA Task Load Index**
+Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research
 
 
 <br>
