@@ -1,0 +1,24 @@
+Purpose
+
+This paper analyzes how novices and experts can safely adapt and transfer their skills to new technology in the medical domain.
+
+Methods
+
+To answer this question, we compared the performance of 12 novices (medical students) with the performance of 12 laparoscopic surgeons (using a 2D view) and 4 robotic surgeons, using a new robotic system that allows 2D and 3D view.
+
+Results
+
+Our results showed a trivial effect of expertise (surgeons generally performed better than novices). Results also revealed that experts have adaptive transfer capacities and are able to transfer their skills independently of the human-machine system. However, the expert’s performance may be disturbed by changes in their usual environment.
+
+Implications
+
+From a safety perspective, this study emphasizes the need to take into account the impact of these environmental changes along with the expert’s adaptive capacities.
+
+
+- Motivation 
+- Literature review 
+- Goal of the research 
+- Research questions / issues to be solved 
+- Concept design - Development 
+- Evaluation 
+- Social impact

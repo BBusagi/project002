@@ -457,9 +457,19 @@ other haptic feedback <br>
 # Design of experiments
 ## **001 The Sense of Agency Scale**
 The Sense of Agency Scale: A Measure of Consciously Perceived Control over One’s Mind, Body, and the Immediate Environment
+>![SoA](SoA.PNG)
 
 ## **002 HandMorph**
 HandMorph: a Passive Exoskeleton that Miniaturizes Grasp
+
+`change the size perception` --- `passive expskeleton`
+
+>2 experiments <br>
+>1. size perception experiment
+>2. simple toy design session
+>3. user test without instructions
+>
+>![handmorph](handmorph.jpg)
 
 ## **003 Game Experience Questionnaire 1**
 The Game Experience Questionnaire. Technische Universiteit Eindhoven.
