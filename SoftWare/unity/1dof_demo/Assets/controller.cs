@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO.Ports;
+using UnityEngine.SceneManagement;
 
 public class controller : MonoBehaviour
 {
@@ -56,6 +57,7 @@ public class controller : MonoBehaviour
         //    sound.Stop();
         //}
 
+
     }
     IEnumerator CalculateSpeed()
     {
@@ -91,7 +93,7 @@ public class controller : MonoBehaviour
         {
             isCrash = true;
             Debug.Log("Crash");
-            sound.Play();
+            //sound.Play(); //是否打开碰撞用媒体音
         }
     }
     void OnCollisionExit(Collision collision)
@@ -126,7 +128,7 @@ public class controller : MonoBehaviour
                 }
                 else
                 {
-                    message = "3";
+                    message = "4";
                 }
             }
             else if (horizontal > 0)
@@ -138,7 +140,7 @@ public class controller : MonoBehaviour
                 }
                 else
                 {
-                    message = "4";
+                    message = "3";
                 }
             }
 
